@@ -118,6 +118,8 @@ class Student
           FROM students
           WHERE grade = ?
           SQL
+          
+    DB[:conn].execute(sql, x).map {|row| self.new_from_db(row)}
   end
   
 end
