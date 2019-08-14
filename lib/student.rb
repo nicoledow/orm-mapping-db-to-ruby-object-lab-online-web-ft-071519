@@ -63,7 +63,9 @@ class Student
           WHERE grade = 9
           SQL
     
-    DB[:conn].execute(sql)
+    array = DB[:conn].execute(sql)
+    binding.pry
+    array
   end
   
 end
