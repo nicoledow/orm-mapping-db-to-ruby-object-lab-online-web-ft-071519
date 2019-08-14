@@ -72,6 +72,7 @@ class Student
           SELECT * 
           FROM students
           WHERE grade != 12
+          SQL
   end
   
 end
