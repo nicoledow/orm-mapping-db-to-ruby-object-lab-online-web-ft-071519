@@ -65,7 +65,7 @@ class Student
           SQL
     
     array = DB[:conn].execute(sql)
-    binding.pry
+    #binding.pry
     array
   end
   
